@@ -1,38 +1,142 @@
-.App {
+.trusted-marr-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.trusted-marr {
+  /* background: #f8f9fa;  */
+  background-image: linear-gradient( 109.6deg,  rgba(166,64,221,1) 21.2%, rgba(102,165,235,1) 74.4% );
+  min-height: 100vh;
+}
+
+.trusted-marr-row {
+  background: #ffffff;
+  border-radius: 8px;
+  align-content: center;
+
+}
+
+.trusted-marr-completion-status {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.trusted-marr-completion-status span {
+  font-weight: bold;
+  color: #ff8800;
+}
+
+
+
+.trusted-marr-btn-orange {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff8800;
+  color: white;
   text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.trusted-marr-btn-orange:hover {
+  background-color: #ff7700;
+  text-decoration: none;
+  color: wheat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.trusted-marr-form-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.trusted-marr-form-group label {
+  flex: 0 0 100%;
+  margin-bottom: 5px;
+}
+
+.trusted-marr-form-group .form-control {
+  flex: 1;
+}
+
+.trusted-marr-center {
+  background: #e9ecef;
+  text-align: center;
+   /* height: 85vh;  */
+  align-content: center;
+}
+
+@media (min-width: 768px) {
+  .trusted-marr-completion-status {
+    text-align: right;
+  }
+
+  .trusted-marr-form-group label {
+    flex: 0 0 30%;
+    margin-right: 15px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 576px) {
+
+  .trusted-marr-text,
+  .trusted-marr-completion-status {
+    font-size: 0.9rem;
+  }
+
+  .trusted-marr-btn-orange {
+    padding: 8px 16px;
+  }
+
+  .trusted-marr-card {
+    padding: 1rem;
+  }
+
+  .trusted-marr-center img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .trusted-marr-completion-status {
+    font-size: 1.2rem;
+  }
+
+  .trusted-marr-btn-orange {
+    padding: 12px 24px;
+  }
+}
+
+.content-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100%;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.trusted-marr-card {
+
+  width: 100%;
+  border-radius: 8px;
+  flex: 1;
+}
+.connect-src{
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons-container {
+  margin-top: 50px;
+   /* margin-top: auto;  */
+  padding: 1rem 0;
+  display: flex;
+  justify-content:center;
+}
+.connect-src span{
+  color: #ff8800;
+}
+.form-control {
+  height: calc(2em + .75rem + 5px);
+  border: 1px solid #9da4ab;
 }
